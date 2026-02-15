@@ -1,3 +1,11 @@
+# Personal
+node_modules/
+.env
+.mp4
+.vscode/
+videos/
+screenshots/
+
 # Logs
 logs
 *.log
