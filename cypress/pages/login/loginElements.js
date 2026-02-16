@@ -7,5 +7,6 @@ export const LOGIN = {
     password: "[name='password']",
     passwordRequered: ":nth-child(3) > .oxd-input-group > .oxd-text",
     btnLogin: ".oxd-button",
-    forgotPassword: ".orangehrm-login-forgot"
+    forgotPassword: ".orangehrm-login-forgot",
+    callBackAlert: ".oxd-alert-content > .oxd-text"
 }

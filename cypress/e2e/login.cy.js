@@ -1,4 +1,4 @@
-import { tryLogin } from "../pages/login/loginFunctions"
+import { tryLogin, loginFail } from "../pages/login/loginFunctions"
 
 
 describe("Testes de login", () => {
@@ -6,13 +6,13 @@ describe("Testes de login", () => {
     tryLogin()
   })
   it("Validar campos de login obrigatórios", () => {
-    tryLogin(" ", " ", false)
+    loginFail(" ", " ", false)
   })
   it("Falha de login com usuário inexistente", () => {
-
+    loginFail("Felipe", undefined)
   })
   it("Falha de login com senha incorreta", () => {
-
+    loginFail(undefined, "Felipe")
   })
 
 })
