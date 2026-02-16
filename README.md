@@ -1,40 +1,31 @@
 # OrangeHRM - Testes E2E com Cypress + CI no GitHub Actions
-Projeto de automação de testes end-to-end utilizando Cypress, com integração contínua configurada no GitHub Actions.
+Automação de testes end-to-end com Cypress, integração contínua configurada no GitHub Actions e utilizando o projeto https://github.com/orangehrm
 Este repositório faz parte do meu portfólio e tem como objetivo demonstrar boas práticas em testes automatizados, organização de projeto e execução em pipeline CI.
 
 ### Objetivo
 
 O objetivo deste projeto é demonstrar:
 
-✅ Conhecimento prático em Cypress
-
-✅ Estruturação de testes E2E com boas práticas
-
-✅ Uso de comandos customizados
-
-✅ Separação de responsabilidades (Page Objects ou organização modular)
-
-✅ Execução automatizada via GitHub Actions
-
-✅ Geração de evidências (screenshots e vídeos)
-
-✅ Pipeline de CI validando testes a cada push ou pull request
+* ✅ Conhecimento prático em Cypress
+* ✅ Estruturação de testes E2E com boas práticas
+* ✅ Uso de comandos customizados
+* ✅ Separação de responsabilidades (Page Objects ou organização modular)
+* ✅ Execução automatizada via GitHub Actions
+* ✅ Geração de evidências (screenshots e vídeos)
+* ✅ Pipeline de CI validando testes a cada push ou pull request
 
 ### Tecnologias Utilizadas
 
-Node.js
-
-Cypress
-
-JavaScript
-
-GitHub Actions
+* Node.js
+* Cypress
+* JavaScript
+* GitHub Actions
 
 ### Estrutura do Projeto
 ```
 cypress/
  ├── e2e/              # Casos de teste
- ├── fixtures/         # Massa de dados
+ ├── fixtures/         # Massa de dados (Ainda será implementado)
  ├── support/          # Comandos customizados e configurações
  ├── screenshots/      # Evidências em caso de falha
  └── videos/           # Vídeos da execução
