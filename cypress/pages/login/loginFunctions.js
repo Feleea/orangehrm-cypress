@@ -2,10 +2,19 @@ import { LOGIN} from "./loginElements"
 import { DASHBOARD } from "../dasboard/elements"
 
 
-export function successLogin() {
+export function tryLogin(user="Admin", pass="admin123", success=true) {
+
     cy.visit("/")
-    cy.typeAText(LOGIN.user, "Admin")
-    cy.typeAText(LOGIN.password, "admin123")
+    cy.typeAText(LOGIN.user, user)
+    cy.typeAText(LOGIN.password, pass)
     cy.performClick(LOGIN.btnLogin)
-    cy.shouldHaveText(DASHBOARD.title, "Dashboard")
+
+    if (success) {
+        cy.shouldHaveText(DASHBOARD.title, "Dashboard")
+
+    } else {
+        cy.shouldBeVisible(LOGIN.userRequered)
+        cy.shouldBeVisible(LOGIN.passwordRequered)
+
+    }
 }
